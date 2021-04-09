@@ -1,9 +1,8 @@
 .SearchForm {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 100%;
-  max-width: 600px;
-  background-color: #fff;
   border-radius: 3px;
   overflow: hidden;
 }
@@ -41,7 +40,7 @@
 
 .SearchFormInput {
   display: inline-block;
-  width: 100%;
+
   font: inherit;
   font-size: 20px;
   border: none;
