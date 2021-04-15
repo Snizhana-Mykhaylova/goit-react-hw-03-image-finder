@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styles from './modal.module.css';
 
 class Modal extends Component {
-  componentWillMount() {
+  componentDidMount() {
     window.addEventListener('keydown', this.handlerKeydown);
   }
 
@@ -10,7 +10,7 @@ class Modal extends Component {
     window.removeEventListener('keydown', this.handlerKeydown);
   }
 
-  handleKeydown = event => {
+  handlerKeydown = event => {
     if (event.code === 'Escape') {
       this.props.onClose();
     }

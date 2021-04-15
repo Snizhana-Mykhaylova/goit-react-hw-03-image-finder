@@ -36,8 +36,8 @@ class App extends Component {
     });
   };
 
-  imageHandler = event => {
-    this.setState({ largeImageUrl: event.target.dataset.url });
+  imageHandler = largeImageURL => {
+    this.setState({ largeImageUrl: [largeImageURL] });
     this.togelmodal();
   };
 
